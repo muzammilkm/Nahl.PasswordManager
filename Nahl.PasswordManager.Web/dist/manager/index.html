@@ -1,0 +1,310 @@
+<div class="container">
+    <h2>Password Manager</h2>
+    <p>Manage all your secrets & passwords in a single encrypted file. <a href="#/learn">Learn more</a> about how it is
+        done. </p>
+    <div class="alert alert-danger d-none" role="alert">
+        Data encryption and decryption is done within your browser and no data is sent to server or stored any ever
+        less.
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="input-group">
+                <select class="form-select search-in" id="search-passwords-in">
+                    <option value="all" selected>All</option>
+                    <option value="login">Login</option>
+                    <option value="password">Password</option>
+                    <option value="tags">Tags</option>
+                </select>
+                <input type="search" id="txt-search-password" class="form-control" placeholder="Search..." />
+                <button type="button" class="btn btn-secondary" id="search-passwords">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button type="button" class="btn btn-secondary ms-1" id="add-password">
+                    <i class="fa-solid fa-plus"></i> Add
+                </button>
+                <button type="button" class="btn btn-success ms-1 position-relative" id="save-passwords">
+                    <i class="fa-solid fa-download"></i> Download
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    </span>
+                </button>
+                <a id="download-file" class="d-none" download="encrypt-password.dat"></a>
+                <button type="button" class="btn btn-dark ms-1" id="upload-passwords">
+                    <i class="fa-solid fa-upload"></i> Upload
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <div id="password-detail-list" class="container my-3 p-3 bg-body rounded shadow-sm">
+        <div class="header row border-bottom">
+            <div class="col-2">
+            </div>
+            <div class="col-2">
+                <h6>Login</h6>
+            </div>
+            <div class="col-2">
+                <h6>Password</h6>
+            </div>
+            <div class="col-6">
+                <h6>Tags</h6>
+            </div>
+        </div>
+        <div class="body">
+
+        </div>
+        <!-- <div class="footer">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <select id="pagination-size" class="form-select form-select-sm"
+                        aria-label=".form-select-sm example">
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+                <div>
+                    <nav aria-label="Page navigation">
+                        <ul id="pagination-view" class="pagination">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="password-detail-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="password-detail-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="txtLogin" class="form-label">Login:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="txtLogin" placeholder="Login" />
+                            </div>
+                            <small class="text-muted">Login or user id associated with password.</small>
+                        </div>
+                        <div class="col-12">
+                            <label for="txtPassword" class="form-label">Password:</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="txtPassword" placeholder="Password" />
+                            </div>
+                            <small class="text-muted">File containing encrypted password.</small>
+                        </div>
+                        <div class="col-12">
+                            <label for="txtTags" class="form-label">Tags:</label>
+                            <div id="txtTags" class="input-group tags">
+                                <input name='tag' id="txtTag" placeholder='add tag'>
+                            </div>
+                            <small class="text-muted">Tags to your password.</small>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" id="add-password-detail" class="btn btn-sm btn-secondary">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                        <div class="table-responsive">
+                            <table id="additional-detail-list" class="table table-striped table-sm">
+                                <thead>
+                                    <tr>
+                                        <th class="col-1">#</th>
+                                        <th class="col-5">Key</th>
+                                        <th class="col-5">Value</th>
+                                        <th class="col-1"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer" id="save-password">
+                    <button type="button" class="btn btn-warning">
+                        <i class="fa-solid fa-floppy-disk"></i> Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="secret-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Configure</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger d-none" role="alert">
+                    </div>
+                    <div class="password-file row">
+                        <div class="col-12">
+                            <label for="passwordListFile" class="form-label">Password file:</label>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="passwordListFile"
+                                    placeholder="passwords file" />
+                            </div>
+                            <small class="text-muted">File containing encrypted password.</small>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <div class="d-flex">
+                            <div class="flex-grow-1"></div>
+                            <div>
+                                <button type="button" id="add-secret" class="btn btn-sm btn-secondary">
+                                    <i class="fa-solid fa-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                        <table id="secret-list" class="table table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th class="col-1">#</th>
+                                    <th class="col-5">Secret</th>
+                                    <th class="col-5">Confirm Secret</th>
+                                    <th class="col-1"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="proceed" class="btn btn-warning">
+                        <i class="fa-solid fa-unlock"></i> Proceed
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/html" id="no-row-message-tml">
+    <div class="row">
+        <div class="col py-3">
+            <div class="d-flex justify-content-center">
+                No rows to display.
+            </div>
+        </div>
+    </div>
+</script>
+</script>
+<script type="text/html" id="password-row-tml">
+    <div data-index="<%= index %>" class="row pt-3 <%= index%2 ? 'bg-light' : '' %>">
+        <div class="col-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary ms-1 expand-password">
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary ms-1 edit-password">
+                <i class="fa-solid fa-pencil"></i>
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-danger ms-1 delete-password">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+        <div class="col-2">
+            <%= login %>
+        </div>
+        <div class="col-2">
+            <a class="toggle-password link-secondary cursor-pointer"><i class="fa-solid fa-eye"></i></a>
+            <span>*********</span>
+            <span class="d-none"><%= password %></span>
+        </div>
+        <div class="col-6">
+            <% _.each(tags, function(tag){ %>
+                <span class="badge rounded-pill bg-warning text-dark"><%= tag %></span>
+            <% }); %>
+        </div>
+    </div>
+    <div class="password-additional-detail row border-bottom pb-3 <%= index%2 ? 'bg-light' : '' %>">
+        <div class="col-2 collapse"></div>
+        <div class="col-10 collapse">
+            <div class="row border-bottom">
+                <div class="col-1">
+                    <h6>#</h6>
+                </div>
+                <div class="col-3">
+                    <h6>Key</h6>
+                </div>
+                <div class="col-8">
+                    <h6>Value</h6>
+                </div>
+            </div>
+            <% _.each(additionalDetails, function(additionalDetail, index){ %>
+                <div class="row">
+                    <div class="col-1">
+                        <%= index + 1 %>
+                    </div>
+                    <div class="col-3">
+                        <%= additionalDetail.key %>
+                    </div>
+                    <div class="col-8">
+                        <%= additionalDetail.value %>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="additional-detail-row-tml">
+    <tr data-index="<%= index %>">
+        <td>
+            <%= index + 1 %>
+        </td>
+        <td>
+            <input type="text" class="key" value="<%= key %>" />
+        </td>
+        <td>
+            <input type="text" class="value" value="<%= value %>" />
+        </td>
+        <td>
+            <button type="button" class="btn btn-sm btn-outline-danger ms-1 delete-password-additional-detail">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </td>
+    </tr>
+</script>
+<script type="text/html" id="secret-row-tml">
+    <tr data-index="<%= index %>">
+        <td>
+            <%= index + 1 %>
+        </td>
+        <td>
+            <input type="password" class="secret form-control"  value="<%= secret %>" />
+            <div class="invalid-feedback">
+                Password mismatch.
+            </div>
+        </td>
+        <td>
+            <input type="password" class="confirm-secret form-control"  value="<%= confirmSecret %>" />
+            <div class="invalid-feedback">
+                Password mismatch.
+            </div>
+        </td>
+        <td>
+            <button type="button" class="btn btn-sm btn-outline-danger ms-1 delete-secret">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </td>
+    </tr>
+</script>
+
+<script type="text/html" id="tag-tml">
+    <span class="badge rounded-pill bg-warning text-dark me-1"><%= tag %>
+        <span class="delete"><i class="fa-solid fa-xmark"></i></span>
+    </span>
+</script>
+
+<script type="text/html" id="pagination-item-tml">
+    <li class="page-item <%= pageNo == currentPageNo ? 'disable': ''%>"><a class="page-link"><%= pageNo %></a></li>
+</script>
