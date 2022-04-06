@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+## Welcome to Nahl.PasswordManager
 
-You can use the [editor on GitHub](https://github.com/muzammilkm/Nahl.PasswordManager/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+A password manager to manage all you password in secured and encrypted way in a single file. The file and secrets are to be stored by you. [Learn more](https://github.com/muzammilkm/Nahl.PasswordManager/README.md) how it is done.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+There are three version of this manager 
+1. Web
+2. Console
+3. Desktop
 
-### Markdown
+You can either download and access online Web version of [Password Manager](https://muzammilkm.github.io/Nahl.PasswordManager/online) hosted on github.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/muzammilkm/Nahl.PasswordManager/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# Encryption & Decryption

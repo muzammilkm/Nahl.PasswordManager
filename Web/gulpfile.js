@@ -29,28 +29,28 @@ gulp.task("minify-js", function () {
             "src/manager/view-models.js",
             "src/routes.js"])
         .pipe(concat("index.js"))
-        .pipe(gulp.dest("dist/scripts"))
+        .pipe(gulp.dest("../online/scripts"))
         .pipe(uglify())
         .pipe(
             rename({
                 suffix: ".min"
             })
         )
-        .pipe(gulp.dest("dist/scripts"));
+        .pipe(gulp.dest("../online/scripts"));
 });
 
 // copy html
 gulp.task("copy-html", function () {
     return gulp
         .src(["./src/**/*.html"])
-        .pipe(gulp.dest("dist"));
+        .pipe(gulp.dest("../online"));
 });
 
 gulp.task("copy-min-html", function () {
     return gulp
         .src(["./src/**/*.html"])
         .pipe(replace(/scripts\/index.js/g, 'scripts/index.min.js'))
-        .pipe(gulp.dest("dist"));
+        .pipe(gulp.dest("../online"));
 });
 
 gulp.task("default", gulp.series("minify-js", "copy-html"));
