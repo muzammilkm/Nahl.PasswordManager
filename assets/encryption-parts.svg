@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="encryption-parts.svg"
+   inkscape:export-filename="D:\Projects\Nahl.PasswordManager\assets\encryption-parts.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-grids="false"
+     inkscape:snap-bbox="true"
+     inkscape:snap-global="true"
+     inkscape:snap-text-baseline="false"
+     inkscape:zoom="0.5052024"
+     inkscape:cx="539.38778"
+     inkscape:cy="582.93468"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#f56d91;fill-opacity:1;stroke-width:0.204615"
+       id="rect31"
+       width="51.200001"
+       height="16"
+       x="14.421569"
+       y="139.76375" />
+    <rect
+       style="fill:#c0d8c0;fill-opacity:1;stroke-width:0.204615"
+       id="rect2075"
+       width="51.200001"
+       height="16"
+       x="65.621567"
+       y="139.76375" />
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.177201"
+       id="rect2077"
+       width="38.400002"
+       height="16"
+       x="116.82157"
+       y="139.76375" />
+    <rect
+       style="fill:#ecb390;fill-opacity:1;stroke-width:0.289369"
+       id="rect2079"
+       width="102.4"
+       height="16"
+       x="155.22157"
+       y="139.76375" />
+    <rect
+       style="fill:#8d8daa;fill-opacity:1;stroke-width:0.289367"
+       id="rect2081"
+       width="102.4"
+       height="16"
+       x="257.62158"
+       y="139.76375" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="29.108892"
+       y="149.84457"
+       id="text7085"><tspan
+         sodipodi:role="line"
+         id="tspan7083"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#ffffff;stroke-width:0.264583"
+         x="29.108892"
+         y="149.84457">128 bits</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="126.97614"
+       y="149.83356"
+       id="text8343"><tspan
+         sodipodi:role="line"
+         id="tspan8341"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#ffffff;stroke-width:0.264583"
+         x="126.97614"
+         y="149.83356">96 bits</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="298.09079"
+       y="149.84457"
+       id="text9249"><tspan
+         sodipodi:role="line"
+         id="tspan9247"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#ffffff;stroke-width:0.264583"
+         x="298.09079"
+         y="149.84457">256 bits</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="197.49464"
+       y="149.80324"
+       id="text11935"><tspan
+         sodipodi:role="line"
+         id="tspan11933"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#ffffff;stroke-width:0.264583"
+         x="197.49464"
+         y="149.80324">... bits</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="28.101549"
+       y="136.97514"
+       id="text14105"><tspan
+         sodipodi:role="line"
+         id="tspan14103"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';stroke-width:0.264583"
+         x="28.101549"
+         y="136.97514">Auth Salt</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="76.989204"
+       y="136.97514"
+       id="text14637"><tspan
+         sodipodi:role="line"
+         id="tspan14635"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';stroke-width:0.264583"
+         x="76.989204"
+         y="136.97514">Secret Salt</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="121.93528"
+       y="136.97514"
+       id="text15213"><tspan
+         sodipodi:role="line"
+         id="tspan15211"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';stroke-width:0.264583"
+         x="121.93528"
+         y="136.97514">Nonce Salt</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="181.4791"
+       y="135.88649"
+       id="text15613"><tspan
+         sodipodi:role="line"
+         id="tspan15611"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';stroke-width:0.264583"
+         x="181.4791"
+         y="135.88649">Encrypted Content</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="296.31589"
+       y="135.88649"
+       id="text16937"><tspan
+         sodipodi:role="line"
+         id="tspan16935"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';stroke-width:0.264583"
+         x="296.31589"
+         y="135.88649">Signature</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="80.308891"
+       y="149.84457"
+       id="text27441"><tspan
+         sodipodi:role="line"
+         id="tspan27439"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#ffffff;stroke-width:0.264583"
+         x="80.308891"
+         y="149.84457">128 bits</tspan></text>
+  </g>
+</svg>

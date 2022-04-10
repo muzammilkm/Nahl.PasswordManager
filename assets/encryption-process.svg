@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg46694"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="encryption-process.svg"
+   inkscape:export-filename="D:\Projects\Nahl.PasswordManager\assets\encryption-process.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview46696"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="419.66786"
+     inkscape:cy="8.8388345"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs46691" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ecb390;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-17.489164"
+       y="39.347729"
+       id="text48442"><tspan
+         sodipodi:role="line"
+         id="tspan48440"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.76111px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ecb390;fill-opacity:1;stroke-width:0.264583"
+         x="-17.489164"
+         y="39.347729">Secret</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#8d8daa;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-23.503107"
+       y="56.454636"
+       id="text50558"><tspan
+         sodipodi:role="line"
+         id="tspan50556"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#8d8daa;fill-opacity:1;stroke-width:0.264583"
+         x="-23.503107"
+         y="56.454636">Random IV</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#f56d91;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="133.97728"
+       y="34.728622"
+       id="text51222"><tspan
+         sodipodi:role="line"
+         id="tspan51220"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#f56d91;fill-opacity:1;stroke-width:0.264583"
+         x="133.97728"
+         y="34.728622">AES-GCM</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#8d8daa;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="52.375511"
+       y="76.805916"
+       id="text63208"><tspan
+         sodipodi:role="line"
+         id="tspan63206"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05555556px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#8d8daa;fill-opacity:1;stroke-width:0.264583"
+         x="52.375511"
+         y="76.805916">Random IV</tspan></text>
+    <g
+       id="g77196"
+       transform="translate(-15.875,1.0057323)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#c0d8c0;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="65.177055"
+         y="45.549873"
+         id="text47184"><tspan
+           sodipodi:role="line"
+           id="tspan47182"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#c0d8c0;fill-opacity:1;stroke-width:0.264583"
+           x="65.177055"
+           y="45.549873">PBKDF2</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#f56d91;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="81.393692"
+         y="51.684273"
+         id="text72680"><tspan
+           sodipodi:role="line"
+           id="tspan72678"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#f56d91;fill-opacity:1;stroke-width:0.264583"
+           x="81.393692"
+           y="51.684273">SHA-256</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ecb390;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="2.4884429"
+       y="76.907738"
+       id="text72845"><tspan
+         sodipodi:role="line"
+         id="tspan72843"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.76111px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ecb390;fill-opacity:1;stroke-width:0.264583"
+         x="2.4884429"
+         y="76.907738">Content</tspan></text>
+    <g
+       id="g77310"
+       transform="translate(-20.02182,-15.33716)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#c0d8c0;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="240.35152"
+         y="77.594757"
+         id="text61458"><tspan
+           sodipodi:role="line"
+           id="tspan61456"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#c0d8c0;fill-opacity:1;stroke-width:0.264583"
+           x="240.35152"
+           y="77.594757">HMAC</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#f56d91;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="246.36469"
+         y="84.15477"
+         id="text75173"><tspan
+           sodipodi:role="line"
+           id="tspan75171"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#f56d91;fill-opacity:1;stroke-width:0.264583"
+           x="246.36469"
+           y="84.15477">SHA-256</tspan></text>
+    </g>
+    <g
+       id="g75259"
+       transform="matrix(0.26609804,0,0,0.26100661,-46.794764,35.370684)"
+       style="fill:#b3b3b3;fill-opacity:1">
+      <rect
+         style="fill:#b3b3b3;fill-opacity:1;stroke-width:0.264583"
+         id="rect75255"
+         width="8.9031973"
+         height="21.996134"
+         x="149.52135"
+         y="28.804462" />
+      <rect
+         style="fill:#b3b3b3;fill-opacity:1;stroke-width:0.264583"
+         id="rect75257"
+         width="8.9031973"
+         height="21.996134"
+         x="35.350929"
+         y="-164.97101"
+         transform="rotate(90)" />
+    </g>
+    <g
+       id="g75265"
+       transform="matrix(0.52998181,0,0,0.4262668,98.353778,26.861962)"
+       style="fill:#b3b3b3;fill-opacity:1">
+      <path
+         sodipodi:type="star"
+         style="fill:#b3b3b3;fill-opacity:1"
+         id="path75261"
+         inkscape:flatsided="false"
+         sodipodi:sides="3"
+         sodipodi:cx="-407.29828"
+         sodipodi:cy="167.95805"
+         sodipodi:r1="40.613991"
+         sodipodi:r2="20.306993"
+         sodipodi:arg1="0"
+         sodipodi:arg2="1.0471976"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m -366.68429,167.95805 -30.46049,17.58638 -30.46049,17.58637 0,-35.17275 0,-35.17274 30.46049,17.58637 z"
+         transform="scale(0.26458333)"
+         inkscape:transform-center-x="-2.6864474" />
+      <rect
+         style="fill:#b3b3b3;fill-opacity:1;stroke-width:0.152259"
+         id="rect75263"
+         width="29.833338"
+         height="8.0709238"
+         x="-142.97055"
+         y="40.334869" />
+    </g>
+    <rect
+       style="fill:none;stroke:#b3b3b3;stroke-width:0.800478;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.800478, 0.800478;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect75301"
+       width="123.05019"
+       height="39.973503"
+       x="-31.511023"
+       y="25.831682" />
+    <g
+       id="g75510"
+       transform="matrix(0.27885633,0,0,0.29077595,-1.9918524,62.558231)"
+       style="fill:#b3b3b3;fill-opacity:1">
+      <rect
+         style="fill:#b3b3b3;fill-opacity:1;stroke-width:0.264583"
+         id="rect75506"
+         width="8.9031973"
+         height="21.996134"
+         x="149.52135"
+         y="28.804462" />
+      <rect
+         style="fill:#b3b3b3;fill-opacity:1;stroke-width:0.264583"
+         id="rect75508"
+         width="8.9031973"
+         height="21.996134"
+         x="35.350929"
+         y="-164.97101"
+         transform="rotate(90)" />
+    </g>
+    <rect
+       style="fill:none;stroke:#b3b3b3;stroke-width:0.9;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.9,0.9;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect75512"
+       width="130.95349"
+       height="60.153549"
+       x="-35.400631"
+       y="21.82049" />
+    <g
+       id="g75518"
+       transform="matrix(0.52998181,0,0,0.4262668,175.59927,11.813416)"
+       style="fill:#b3b3b3;fill-opacity:1">
+      <path
+         sodipodi:type="star"
+         style="fill:#b3b3b3;fill-opacity:1"
+         id="path75514"
+         inkscape:flatsided="false"
+         sodipodi:sides="3"
+         sodipodi:cx="-407.29828"
+         sodipodi:cy="167.95805"
+         sodipodi:r1="40.613991"
+         sodipodi:r2="20.306993"
+         sodipodi:arg1="0"
+         sodipodi:arg2="1.0471976"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m -366.68429,167.95805 -30.46049,17.58638 -30.46049,17.58637 0,-35.17275 0,-35.17274 30.46049,17.58637 z"
+         transform="scale(0.26458333)"
+         inkscape:transform-center-x="-2.6864474" />
+      <rect
+         style="fill:#b3b3b3;fill-opacity:1;stroke-width:0.152259"
+         id="rect75516"
+         width="29.833338"
+         height="8.0709238"
+         x="-142.97055"
+         y="40.334869" />
+    </g>
+    <rect
+       style="fill:none;stroke:#cccccc;stroke-width:0.6;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.6,0.6;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect75526"
+       width="44.832096"
+       height="33.496525"
+       x="-27.91724"
+       y="29.056528" />
+    <rect
+       style="fill:none;stroke:#b3b3b3;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1,1;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect77312"
+       width="299.5119"
+       height="68.248466"
+       x="-39.9683"
+       y="17.666471" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.76111px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ecb390;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="146.61971"
+       y="55.533669"
+       id="text79070"><tspan
+         sodipodi:role="line"
+         id="tspan79068"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.76111px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ecb390;fill-opacity:1;stroke-width:0.264583"
+         x="146.61971"
+         y="55.533669">Secret</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#8d8daa;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="140.60576"
+       y="72.640564"
+       id="text79074"><tspan
+         sodipodi:role="line"
+         id="tspan79072"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';fill:#8d8daa;fill-opacity:1;stroke-width:0.264583"
+         x="140.60576"
+         y="72.640564">Random IV</tspan></text>
+    <g
+       id="g79090"
+       transform="matrix(0.26609804,0,0,0.26100661,117.31408,51.556613)"
+       style="fill:#b3b3b3;fill-opacity:1">
+      <rect
+         style="fill:#b3b3b3;fill-opacity:1;stroke-width:0.264583"
+         id="rect79086"
+         width="8.9031973"
+         height="21.996134"
+         x="149.52135"
+         y="28.804462" />
+      <rect
+         style="fill:#b3b3b3;fill-opacity:1;stroke-width:0.264583"
+         id="rect79088"
+         width="8.9031973"
+         height="21.996134"
+         x="35.350929"
+         y="-164.97101"
+         transform="rotate(90)" />
+    </g>
+    <g
+       id="g79096"
+       transform="matrix(0.52998181,0,0,0.4262668,262.46263,43.047883)"
+       style="fill:#b3b3b3;fill-opacity:1">
+      <path
+         sodipodi:type="star"
+         style="fill:#b3b3b3;fill-opacity:1"
+         id="path79092"
+         inkscape:flatsided="false"
+         sodipodi:sides="3"
+         sodipodi:cx="-407.29828"
+         sodipodi:cy="167.95805"
+         sodipodi:r1="40.613991"
+         sodipodi:r2="20.306993"
+         sodipodi:arg1="0"
+         sodipodi:arg2="1.0471976"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m -366.68429,167.95805 -30.46049,17.58638 -30.46049,17.58637 0,-35.17275 0,-35.17274 30.46049,17.58637 z"
+         transform="scale(0.26458333)"
+         inkscape:transform-center-x="-2.6864474" />
+      <rect
+         style="fill:#b3b3b3;fill-opacity:1;stroke-width:0.152259"
+         id="rect79094"
+         width="29.833338"
+         height="8.0709238"
+         x="-142.97055"
+         y="40.334869" />
+    </g>
+    <rect
+       style="fill:none;stroke:#b3b3b3;stroke-width:0.800478;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.800478, 0.800478;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect79098"
+       width="123.05019"
+       height="39.973503"
+       x="132.59785"
+       y="42.017609" />
+    <rect
+       style="fill:none;stroke:#cccccc;stroke-width:0.6;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.6, 0.6;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect79100"
+       width="44.832096"
+       height="33.496525"
+       x="136.19164"
+       y="45.242455" />
+  </g>
+</svg>
