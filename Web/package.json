@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:debug:watch": "gulp",
     "build:debug": "gulp",
+    "build:debug:watch": "gulp watch",
     "build:release": "gulp release",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "live-server --no-browser"

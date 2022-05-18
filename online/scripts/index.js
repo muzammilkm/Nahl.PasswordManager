@@ -176,6 +176,7 @@
 
         view.init = function () {
             var s = this;
+            s.lblPasswordCount = $("#lbl-password-count");
             s.passwordDetailList = $("#password-detail-list .body");
             //s.gridFooter = $("#password-detail-list .footer");
             s.noRowMessageTml = _.template($("#no-row-message-tml").html());
@@ -188,6 +189,7 @@
         view.render = function () {
             var s = this,
                 detailHtml = "",
+                passwordListSource = model.getPasswordListSource(),
                 passwordList = model.getPasswordList();
             if (passwordList.length === 0) {
                 detailHtml = s.noRowMessageTml();
@@ -199,6 +201,7 @@
                     detailHtml += s.passwordRowTml({ ...password, index });
                 });
             }
+            s.lblPasswordCount.text(`Showing ${passwordList.length} of ${passwordListSource.length} passwords.`);
             s.passwordDetailList.html(detailHtml);
             $(".edit-password").click(e => {
                 var elem = $(e.target).closest(".row");
@@ -212,7 +215,6 @@
                 var elem = $(e.target);
                 elem.children("i").toggleClass("fa-angle-down fa-angle-up");
                 elem.closest(".row").next().children().each((i, e) => {
-                    console.log(e);
                     new bootstrap.Collapse(e);
                 });
             });
@@ -501,6 +503,11 @@
             return s;
         };
 
+        model.getPasswordListSource = function () {
+            var s = this;
+            return s.passwordListSource;
+        };
+
         model.getPasswordList = function () {
             var s = this;
             return s.passwordList;
@@ -701,15 +708,15 @@
                     return _.password.includes(searchText);
                 }
                 else if (searchIn == 'tags') {
-                    return _.tags.includes(searchText);
+                    return _.tags.some(t=> t.includes(searchText));
                 } else {
                     return _.login.includes(searchText) ||
                         _.password.includes(searchText) ||
-                        _.tags.includes(searchText);
+                        _.tags.some(t=> t.includes(searchText));
                 }
             });
         };
-
+        
         return model.init();
     }
     resolver('manager.model', model);

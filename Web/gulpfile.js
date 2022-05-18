@@ -55,4 +55,8 @@ gulp.task("copy-min-html", function () {
 
 gulp.task("default", gulp.series("minify-js", "copy-html"));
 
+gulp.task("watch", function(){
+    gulp.watch(['./src/**/*'], gulp.series("minify-js", "copy-html"));
+})
+
 gulp.task("release", gulp.series("minify-js", "copy-min-html"));

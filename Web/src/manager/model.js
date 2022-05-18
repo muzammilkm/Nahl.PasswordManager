@@ -18,6 +18,11 @@
             return s;
         };
 
+        model.getPasswordListSource = function () {
+            var s = this;
+            return s.passwordListSource;
+        };
+
         model.getPasswordList = function () {
             var s = this;
             return s.passwordList;
@@ -218,15 +223,15 @@
                     return _.password.includes(searchText);
                 }
                 else if (searchIn == 'tags') {
-                    return _.tags.includes(searchText);
+                    return _.tags.some(t=> t.includes(searchText));
                 } else {
                     return _.login.includes(searchText) ||
                         _.password.includes(searchText) ||
-                        _.tags.includes(searchText);
+                        _.tags.some(t=> t.includes(searchText));
                 }
             });
         };
-
+        
         return model.init();
     }
     resolver('manager.model', model);
