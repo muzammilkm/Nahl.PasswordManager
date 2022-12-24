@@ -526,6 +526,8 @@
             s.dirty = false;
             s.error = false;
             s.errorMessage = "";
+            s.searchIn = "All";
+            s.searchText = "";
             return s;
         };
 
@@ -543,7 +545,7 @@
             var s = this;
             password.tags = tags;
             password.additionalDetails = additionalDetails;
-            s.passwordList.push(password);
+            s.passwordListSource.push(password);
             s.dirty = true;
         };
 
@@ -591,8 +593,10 @@
         };
 
         model.removePassword = function (index) {
-            var s = this;
-            s.passwordList.splice(index, 1);
+            var s = this,
+                sIndex = s.passwordListSource.findIndex(p => p == s.passwordList[index]);
+            s.passwordListSource.splice(sIndex, 1);
+            s.dirty = true;
         };
 
         model.addPasswordAdditionalDetail = function (passwordAdditionalDetails) {
@@ -720,21 +724,27 @@
             return s.errorMessage;
         };
 
-        model.searchPasswords = function (searchIn, searchText) {
-            var s = this,
-                searchTextRegExp = new RegExp(searchText, "i");
-            if (searchText == "") {
+        model.setSearchContext = function (searchIn, searchText) {
+            var s = this;
+            s.searchIn = searchIn;
+            s.searchText = searchText;
+        };
+
+        model.searchPasswords = function () {
+            var s = this;
+            if (s.searchText == "") {
                 s.passwordList = s.passwordListSource;
                 return;
             }
+            var searchTextRegExp = new RegExp(s.searchText, "i")
             s.passwordList = s.passwordListSource.filter(_ => {
-                if (searchIn == 'login') {
+                if (s.searchIn == 'login') {
                     return _.login.search(searchTextRegExp) != -1;
                 }
-                else if (searchIn == 'password') {
+                else if (s.searchIn == 'password') {
                     return _.password.search(searchTextRegExp) != -1;
                 }
-                else if (searchIn == 'tags') {
+                else if (s.searchIn == 'tags') {
                     return _.tags.some(t => t.search(searchTextRegExp) != -1);
                 } else {
                     return _.login.search(searchTextRegExp) != -1 ||
@@ -793,12 +803,14 @@
         additionalDetails = this.additionalDetailView.get();
       this.model.savePassword(password, tags, additionalDetails);
       this.passwordDetailModal.hide();
+      this.model.searchPasswords();
       this.passwordDetailListView.render();
       this.passwordDetailGridOperation.render();
     };
 
     deletePassword = function (index) {
       this.model.removePassword(index);
+      this.model.searchPasswords();
       this.passwordDetailListView.render();
       this.passwordDetailGridOperation.render();
     };
@@ -856,7 +868,8 @@
     };
 
     searchPasswords = function (searchIn, searchText) {
-      this.model.searchPasswords(searchIn, searchText);
+      this.model.setSearchContext(searchIn, searchText);
+      this.model.searchPasswords();
       this.passwordDetailListView.render();
     };
   }

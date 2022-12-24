@@ -42,12 +42,14 @@
         additionalDetails = this.additionalDetailView.get();
       this.model.savePassword(password, tags, additionalDetails);
       this.passwordDetailModal.hide();
+      this.model.searchPasswords();
       this.passwordDetailListView.render();
       this.passwordDetailGridOperation.render();
     };
 
     deletePassword = function (index) {
       this.model.removePassword(index);
+      this.model.searchPasswords();
       this.passwordDetailListView.render();
       this.passwordDetailGridOperation.render();
     };
@@ -105,7 +107,8 @@
     };
 
     searchPasswords = function (searchIn, searchText) {
-      this.model.searchPasswords(searchIn, searchText);
+      this.model.setSearchContext(searchIn, searchText);
+      this.model.searchPasswords();
       this.passwordDetailListView.render();
     };
   }
