@@ -721,28 +721,30 @@
         };
 
         model.searchPasswords = function (searchIn, searchText) {
-            var s = this;
+            var s = this,
+                searchTextRegExp = new RegExp(searchText, "i");
             if (searchText == "") {
                 s.passwordList = s.passwordListSource;
                 return;
             }
             s.passwordList = s.passwordListSource.filter(_ => {
                 if (searchIn == 'login') {
-                    return _.login.includes(searchText);
+                    return _.login.search(searchTextRegExp) != -1;
                 }
                 else if (searchIn == 'password') {
-                    return _.password.includes(searchText);
+                    return _.password.search(searchTextRegExp) != -1;
                 }
                 else if (searchIn == 'tags') {
-                    return _.tags.some(t=> t.includes(searchText));
+                    return _.tags.some(t => t.search(searchTextRegExp) != -1);
                 } else {
-                    return _.login.includes(searchText) ||
-                        _.password.includes(searchText) ||
-                        _.tags.some(t=> t.includes(searchText));
+                    return _.login.search(searchTextRegExp) != -1 ||
+                        _.password.search(searchTextRegExp) != -1 ||
+                        _.tags.some(t => t.search(searchTextRegExp) != -1) ||
+                        _.additionalDetails.some(d => d.key.search(searchTextRegExp) != -1 || d.value.search(searchTextRegExp) != -1);
                 }
             });
         };
-        
+
         return model.init();
     }
     resolver('manager.model', model);
